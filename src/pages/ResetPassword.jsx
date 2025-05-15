@@ -10,7 +10,7 @@ export default function ResetPassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`https://backend-password-reset-1-8isk.onrender.com/api/auth/request-reset/${token}`, { password });
+      await axios.post(`https://backend-password-reset-1-8isk.onrender.com/api/auth/reset-password/${token}`, { password });
 
 
       alert('Password reset successfully');
