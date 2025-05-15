@@ -10,7 +10,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/signup`, { email, password });
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/signup`, { email, password },  { withCredentials: true });
       alert('Signup successful');
       navigate('/login');
     } catch (error) {
