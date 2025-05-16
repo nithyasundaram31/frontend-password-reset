@@ -5,6 +5,7 @@ import axios from 'axios';
 export default function ResetPassword() {
   console.log("Deploying...");
   const { token } = useParams();
+   console.log("Reset token:", token);
   const [password, setPassword] = useState('');
 
   const handleSubmit = async (e) => {
