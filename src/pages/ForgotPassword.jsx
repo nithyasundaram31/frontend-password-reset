@@ -8,7 +8,7 @@ export default function ForgotPassword() {
     e.preventDefault();
     try {
       //await axios.post('/api/auth/request-reset', { email });
-      await axios.post('https://backend-password-reset-1-8isk.onrender.com/api/auth/password-reset',{ email });
+      await axios.post('https://backend-password-reset-1-8isk.onrender.com/api/auth/request-reset',{ email });
 
       alert('Reset link sent if email exists');
     } catch (error) {
